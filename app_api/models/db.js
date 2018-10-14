@@ -1,8 +1,10 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://localhost/meandb';
+//var dbURI = 'mongodb://localhost/meandb';
+var dbURI = 'mongodb://muser:qwe321@ds251902.mlab.com:51902/meandb1';
 if (process.env.NODE_ENV === 'production') {
-    dbURI = process.env.MONGOLAB_URI;
+    //dbURI = process.env.MONGOLAB_URI;
+    dbURI = 'mongodb://muser:qwe321@ds251902.mlab.com:51902/meandb1';
 }
 
 mongoose.connect(dbURI);

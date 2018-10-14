@@ -2,21 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/views/generic-text.jade</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/views/layout.jade</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/controllers/others.js</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/routes/index.js</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/views/location-review-form.jade</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/models/db.js</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/views/location-info.jade</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/package.json</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/views/gleb.jade</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/views/locations-list.jade</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/controllers/locations.js</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app.js</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/public/stylesheets/style.css</file>
-            <file>file:/C:/Users/Администратор/Dropbox/coding/projects/loc8r/app_server/locations.js</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

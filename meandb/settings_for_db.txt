@@ -1,0 +1,6 @@
+	mongodump -h localhost:27017 -d Loc8r -o
+	mongorestore -h ds251902.mlab.com:51902 -d meandb1 -u muser -p qwe321 ./meandb/
+	mongo ds251902.mlab.com:51902/meandb1 -u muser -p qwe321
+	
+	
+db.locations.update({ name: 'Starcups' }, { $push: { reviews: { author: 'Charlz', id: ObjectId(), rating: 5, timestamp: new Date("Jul 16, 2018"), reviewText: "Cool place! I promis, i will back to this place again!" } } })
