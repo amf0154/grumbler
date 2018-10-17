@@ -22,7 +22,7 @@ var theEarth = (function() {
 var sendJsonResponse = function(res, status, content){
     res.status(status);
     res.json(content);
-}
+};
 
 module.exports.locationsCreate = function (req, res) {
     sendJsonResponse(res, 200, {"status": "success"});
@@ -43,6 +43,37 @@ module.exports.testReadOne = function (req, res) {
 };
 */
 
+module.exports.locationsCreate = function(req, res) {
+  //  console.log(req.body.facilities);
+  var newLocation = new Loc({
+    name: req.body.name,
+    address: req.body.address,
+    facilities: req.body.facilities.split(","),
+    coords: [parseFloat(req.body.lng), parseFloat(req.body.lat)],
+    openingTimes: [{
+      days: req.body.days1,
+      opening: req.body.opening1,
+      closing: req.body.closing1,
+      closed: req.body.closed1,
+    }, {
+      days: req.body.days2,
+      opening: req.body.opening2,
+      closing: req.body.closing2,
+      closed: req.body.closed2,
+    }]
+  });
+    newLocation.save(function (err) {
+       if(err){ 
+            console.log("error:"+err);
+           sendJsonResponse(res, 200, err);
+       }else{
+         
+           sendJsonResponse(res, 200, data);
+           console.log("its ok");  
+       }   
+    });
+    console.log(req.body);
+};
 
 module.exports.testReadOne = function (req, res) {
     var MongoClient = require('mongodb').MongoClient;

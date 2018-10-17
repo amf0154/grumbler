@@ -1,11 +1,37 @@
+
+//var myArr = new Set(['Aletx','Maria','Kitty','Julia']);
+//var iterator = myArr.keys();
+//console.log(iterator.next().value);
+
+module.exports.test = function(req, res) {
+
+    var arr = [
+        {name: 'Alex', surname:'Afanasev', age:25, sex:'Male', score: 1},
+        {name: 'Masha', surname:'Gunko', age:45, sex:'Female', score: 1},
+        {name: 'Mikola', surname:'Denisov', age:75, sex:'Male', score: 1},
+        {name: 'Katya', surname:'Rudova', age:39, sex:'Female', score: 1},
+        {name: 'Julgovol', surname:'Perkonoboe', age:'', sex:'', score: 1}
+    ];
+ /*   
+    var sort = function(x,y){
+        var xW = x.sex == 'Male' ? x.score : x.score * 75;
+        var yW = y.sex == 'Male' ? y.score : y.score * 75;
+        return xW > yW ? 1 : -1;
+    };
+    
+    
+    var resArr = arr.sort(sort);
+    console.log(resArr);
+   */ 
+};
 module.exports.homelist = function(req, res) {
     res.render('locations-list', {
-        title: 'Loc8r - find a place to work with wifi',
+        title: 'Grumbler - find a place to work with wifi',
         pageHeader: {
-            title: 'Loc8r',
+            title: 'Grumbler',
             strapline: 'Find places to work with wifi near you!'
         },
-        sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+        sidebar: "Looking for wifi and a seat? Grumbler helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Grumbler help you find the place you're looking for.",
         locations: [{
             name: 'Starcups',
             address: '125 High Street, Reading, RG6 1PS',
@@ -36,7 +62,7 @@ module.exports.locationInfo = function(req, res) {
             title: 'Starcups'
         },
         sidebar: {
-            context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
+            context: 'is on Grumbler because it has accessible wifi and space to sit down with your laptop and get some work done.',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
@@ -80,7 +106,7 @@ module.exports.locationInfo = function(req, res) {
 /* GET 'Add review' page */
 module.exports.addReview = function(req, res) {
     res.render('location-review-form', {
-        title: 'Review Starcups on Loc8r',
+        title: 'Review Starcups on Grumbler',
         pageHeader: {
             title: 'Review Starcups'
         }
